@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 import os
-from route_proxy import router as proxy_router
+from .route_proxy import router as proxy_router
 
 app = FastAPI()
 app.include_router(proxy_router)
