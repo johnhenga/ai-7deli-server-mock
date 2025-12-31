@@ -4,9 +4,14 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "init chat",
+            "label": "local init chat",
             "type": "shell",
-            "command": "echo Hello"
+            "command": "curl -i http://localhost:8000/chatbot "
+        },
+        {
+            "label": "Koyeb init chat",
+            "type": "shell",
+            "command": "curl https://domestic-verena-aloha-98ed0272.koyeb.app/chatbot"
         }
     ]
 }
